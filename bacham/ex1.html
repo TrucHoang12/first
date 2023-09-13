@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"> 
+        <title>TIỆM SÁCH ONLINE</title>
+    </head>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .hot {
+            margin: auto;
+            width:70%;
+            border: 5px solid #562B08;
+
+        }
+        .th{
+            text-align: left;
+            width:fit-content;
+            height:fit-content;
+            
+        }
+        #spbc{
+            font-weight: bolder;
+            font-size: x-large;
+            color: #562B08;
+        }
+        #find{
+            float:right;
+            border-style: double;
+            width: auto;
+        }
+        #button-find:active{
+            background-color: #562B08;
+            color: yellow;
+        }
+        .item{
+            font-weight: bolder;
+        }
+        .item:hover{
+            color: orange;
+        }
+        .item:active{
+            color: red;
+        }
+    </style>
+    <body bgcolor="F8EDE3">
+        <div>
+            <a href="" alt="logo_tiemsach">
+                <img src="icon_s.png" width="200px" height="200px">
+            </a>
+        </div>
+        <div >
+            <h1>TIỆM SÁCH ONLINE</h1>
+        </div>
+           
+            <div id="find">
+                <input type="text" placeholder="Tìm kiếm..."><button id="button-find">Tìm</button>
+            </div>
+            <br>
+            
+            <table class="hot" border="1">
+                <tr>
+                    <td colspan="3" align="center" cellpadding="20px" id="spbc">Sản Phẩm Bán Chạy</td>
+                </tr>
+                <tr align="center"height="200px">
+                    <td><img height="200px" src="html.jpg"></td>
+                    <td><img height="200px" src="tam-cam.jpg"></td>
+                    <td><img height="200px" src="thachsanh.jpg"></td>
+                </tr>
+                <tr align="center">
+                    <td class="item">Sách HTML & CSS</td>
+                    <td class="item">Truyện Cổ Tích Tấm Cám</td>
+                    <td class="item">Truyện Cổ Tích Thạch Sanh</td>
+                </tr>
+                <tr align="center"height="200px">
+                    <td><img height="200px" src="800.jpg"></td>
+                    <td><img height="200px" src="nt1.jpg"></td>
+                    <td><img height="200px" src="nt2.jpg"></td>
+                </tr>
+                <tr align="center">
+                    <td class="item">800 Dặm Trên Sông Amazon</td>
+                    <td class="item">Sẽ Có Thiên Thần Thay Anh Yêu Em</td>
+                    <td class="item">Câu Được Con Rùa Vàng</td>
+                </tr>
+                <tr align="center"height="200px">
+                    <td><img height="200px" src="css.jpg"></td>
+                    <td><img height="200px" src="songngu.jpg"></td>
+                    <td><img height="200px" src="van.jpg"></td>
+                </tr>
+                <tr align="center">
+                    <td class="item">HTML5 & CSS3 All In One For Dummbles</td>
+                    <td class="item">Truyện Song Ngữ Where Is My Home</td>
+                    <td class="item">Tuyển Tập 150 Bài Văn Hay Lớp 12</td>
+                </tr>
+                <tr align="center"height="200px">
+                    <td><img height="200px" src="python.jpg"></td>
+                    <td><img height="200px" src="ton.jpg"></td>
+                    <td><img height="200px" src="hoa.jpg"></td>
+                </tr>
+                <tr align="center">
+                    <td class="item">Đường Vào Lập Trình Python</td>
+                    <td class="item">Toán Tư Duy Beginning Creative Math</td>
+                    <td class="item">Các Chuyên Đề Bồi Dưỡng Học Sinh Giỏi Hóa Học</td>
+                </tr>
+            </table>
+            <br>
+            <form action="">
+                <table border="1" width="50%" id="customer">
+                    <tr>
+                        <td colspan="2" align="center" style="color:#562B08;font-weight:bolder">Thông Tin Khách Hàng</td>
+                    </tr>
+                    <tr>
+                        <th class="th">Họ Tên Khách Hàng: </th>
+                        <td><input type="text" placeholder=""></td>
+                    </tr>
+                    <tr>
+                        <th class="th">Số Điện Thoại: </th>
+                        <td><input type="text" placeholder=""></td>
+                    </tr>
+                    <tr>
+                        <th class="th">Email: </th>
+                        <td><input type="email"></td>
+                    </tr>
+                    <tr>
+                        <th class="th">Địa chỉ: </th>
+                        <td><textarea></textarea></td>
+                    </tr>
+                    <tr>
+                        <th class="th">Phương Thức Thanh Toán: </th>
+                        <td>
+                            <input type="radio" name="cash"> Thanh toán khi nhận hàng
+                            <input type="radio" name="cash"> MoMo
+                            <br>
+                            <input type="radio" name="cash"> Internet Banking
+                            <input type="radio" name="cash"> Zalo Pay
+                        </td>
+                    </tr>
+                </table>
+            </form>
+    </body>
+</html>

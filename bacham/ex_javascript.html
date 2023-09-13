@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script language="javascript" src="ex_jvscript.js">
+        //document.write( "Xin chao cac ban!");
+    </script>
+    <title>Document</title>
+</head>
+
+<body id="body">
+    <p>Chao mung cac ban den voi tgioi
+        cua JavaScript
+    </p>
+    <!--Chuyen mau nen, vd trong file bai giang-->
+    <button type="button" onclick="document.getElementById('body').style.backgroundColor='lightpink'">RED</button>
+    <button type="button" onclick="document.getElementById('body').style.backgroundColor='lightblue'">BLUE</button>
+    <button type="button" onclick="document.getElementById('body').style.backgroundColor='lightgreen'">GREEN</button>
+    <br>
+    <script language="javascript">
+        alert("Xin chao!");
+        /*
+        //cau 1
+        var number = prompt(" Nhap so luong phtu cho mang: ");
+        var arrNum = new Array(number);
+        for (i=0; i<number; i++){
+            arrNum[i] = prompt("Nhap ptu thu "+i);
+        }
+        for (i=0; i<number; i++){
+            document.write(arrNum[i]+"  ");
+        }
+        document.writeln("<br>Tong phan tu mang: "+arrNum.length);
+        var max = arrNum[0];
+        for (i=0; i<number; i++){
+            if (arrNum[i] > max)
+                max = arrNum[i];
+        }
+        document.writeln("<br>Max: "+max);
+        var min = arrNum[0];
+        for (i=0; i<number; i++){
+            if (arrNum[i] < min)
+                min = arrNum[i];
+        }
+        document.writeln("<br>Min: "+min);
+        */
+        //cau 2
+        /*
+        var n1 = prompt(" Nhap so luong phtu cho mang 1: ");
+        var arr1 = new Array(n1);
+        for (i=0; i<n1; i++){
+            arr1[i] = prompt(" Nhap gtri cho ptu thu "+i+" cua mang 1: ");
+        }
+        document.write("<br>");
+        for (i=0; i<n1; i++){
+            document.write("Mang 1: "+arr1[i]+",   ");
+        }
+        var n2 = prompt(" Nhap so luong ptu cho mang 2");
+        var arr2 = new Array(n2);
+        for (i=0; i<n2; i++){
+            arr2[i] = prompt(" Nhap gtri cho ptu thu "+i+" cua mang 2: ");
+        }
+        document.write("<br>");
+        for (i=0; i<n2; i++){
+            document.write("Mang 2: "+arr2[i]+",    ");
+        }
+        var arrS = arr1.concat(arr2);
+        document.writeln("<br>Mang sau khi sap xep: "+arrS.sort());
+        */
+        var number = prompt(" Nhap so luong phtu cho mang: ");
+        var arrNum = new Array(number);
+        for (i = 0; i < number; i++) {
+            arrNum[i] = prompt("Nhap ptu thu " + i);
+        }
+        document.write(" Mang ban dau: ");
+        for (i = 0; i < number; i++) {
+            document.write(arrNum[i] + "  ");
+        }
+        var k = prompt(" Nhap vi tri muon them ptu(Bat dau tu vi tri thu 0): ");
+        var item = prompt(" Nhap gia tri muon them: ");
+        arrNum.splice(k, 0, item);
+        document.writeln("<br>Vi tri muon them: " + k);
+        document.writeln("<br>Gia tri muon them: " + item);
+        document.write("<br>Mang sau khi them phtu: ");
+        for (i = 0; i < arrNum.length ; i++) {
+            document.write(arrNum[i] + "  ");
+        }
+        
+    </script>
+</body>
+
+</html>

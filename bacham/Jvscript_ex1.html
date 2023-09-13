@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label>User: </label><input type="text" id="user"><br>
+        <label>Password: </label><input type="password" id="pass"><br>
+        <button type="submit" onclick="add()">Sign Up</button>
+        
+    </form>
+    <script>
+       var data = [];
+       function add(){
+        var item_user = document.getElementById('user').value;
+        var item_pass = document.getElementById('pass').value;
+
+        var item = {
+            id : item_user,
+            pw : item_pass
+        }
+        data.push(item);
+        console.log(data);
+        }
+        
+
+    </script>
+</body>
+</html>

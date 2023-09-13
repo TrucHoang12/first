@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My first HTML page</title>
+    </head>
+    <style>
+        .contact {
+            
+            width: 50%;
+            height: 100px;
+            
+            float: left;
+        }
+        .right {
+            width: 50%;
+            height: 100px;
+           
+            float: right;
+        }
+        .title-form {
+            color: blue;
+        }
+    </style>
+    <body style="background-image:url('pic.jpg');"> 
+        <!--bgcolor = "yellow" -> color of background-->
+        <!-- <hr> them mot duong ngang -->
+        <p style="color: blue; 
+                font-size: 30px; 
+                background-color: burlywood;
+                width: 400px;
+                height: 100px;"> Day la trang web <br>dau tien cua toi
+                <br> Xin chao ca nha iu cua pe </p>
+        <table border ="3" cellsparing="100" cellspadding="10" width="50%" height="250 px">
+            <tr >
+                <td> ten </td>
+                <td> gioi tinh</td>
+                <td> bla bla </td>
+            </tr>
+            <tr align="center">
+                <td> truc </td>
+                <td> nu </td>
+                <td> ple ple </td>
+            </tr>
+            <tr align="center">
+                <td> mai </td>
+                <td> nu </td>
+                <td>plo plo </td>
+            </tr>
+        </table>
+        <br> 
+        <hr>
+        <br>       
+        <table border="1" cellpadding="10" cellspacing="10" width="400" height="200">
+            <caption>This is the caption</caption>
+            <thead> 
+                <tr>
+                    <td colspan="3">header</td>
+                </tr>
+            </thead>
+            <tr align="right" valign="top">
+                <th>STT</th>
+                <th>HO VA TEN</th>
+                <th>GIOI TINH</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Nguyen Van A</td>
+                <td>Nam</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Hoang Thi B</td>
+                <td align="right">Nu</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Lam Van C</td>
+                <td>Nam</td>
+            </tr>
+            <tfoot> 
+                <tr>
+                    <td colspan="3">footer</td>
+                </tr>
+            </tfoot>
+        </table>
+        <br><hr>
+        <table border="4">
+            <tr>
+                <th> Họ và Tên</th>
+                <td><input type="Text" placeholder="Tên bạn là???"></td>
+            </tr>
+            <tr>
+                <th>Ngày sinh </th>
+                <td>
+                    <select>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                    <select>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                    <select>
+                        <option value="">2000</option>
+                        <option value="">2001</option>
+                        <option value="">2002</option>
+                        <option value="">2003</option>
+                        <option value="">2004</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Giới tính</th>
+                <td><input type="radio" name="nam">Nam <input type="radio" name="nam">Nữ </td>
+                
+            </tr>
+            <tr>
+                <th>Địa chỉ</th>
+                <td><textarea></textarea></td>
+            </tr>
+            <tr>
+                <th>Bằng cấp</th>
+                <td>
+                    <input type="checkbox"/> Anh văn
+                    <input type="checkbox"/> Tin học
+                </td>
+            </tr>
+            <tr>
+                <th>Trình độ học vấn</th>
+                <td> 
+                    <select size="2">
+                        <option value="">THPT</option>
+                        <option value="">Trung cấp</option>
+                        <option value="">Cao đẳng</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2">
+                    <input type="submit" value="Submit"> 
+                    <input type="reset" value="Clear"> 
+                </td>
+            </tr>
+            
+        </table>
+        <div class="contact"> 
+            <ul>
+                <li> &nbsp;Address: 12, Nola Street, Another Land</li>
+                <li>&nbsp;Hotline: 035 684 972</li>
+                <li>&nbsp;E-mail: pinkystar@gmail.com</li>
+            </ul>
+        </div>
+        <div class="right">
+            <ul>
+                <li>Ở đây bán mọi thứ pạn muốn </li>
+                <li>Có thể thử trước khi mua sản phẩm</li>
+            </ul>
+        </div>
+        <canvas id="myCanvas">
+            Your browser does not support the canvas tag.
+            </canvas>
+            
+            <script>
+            var canvas = document.getElementById("myCanvas");
+            var ctx = canvas.getContext("2d");
+            ctx.fillStyle = "#FF0000";
+            ctx.fillRect(0, 0, 80, 80);
+            </script>
+
+            <hr>
+            <!--1-->
+            <form>
+            </form>
+            <!--2-->
+            <input type="text" placeholder="Nhập tên bạn đi">
+            <!--3-->
+            <textarea></textarea>
+            <!--4-->
+            <label>Bạn có gấu chưa?</label>
+            <!--5-->
+            <fieldset>
+                <!--6-->
+                <legend>Thông tin cá nhân</legend>
+                Tên:<br>
+                Năm sinh:<br>
+                Giới tính:<br>
+            </fieldset>
+            <!--7-->
+            <select>
+                <!--8-->
+                    <optgroup label="Viet Nam">
+                            <!--9-->
+                        <option value="hanoi">Hanoi</option>
+                        <option value="HCM">HCM</option>
+                    </optgroup>
+                        
+                    <optgroup label="America">
+                        <option value="chicago">Chicago</option>
+                        <option value="Las Vegas">Las Vegas</option>     
+                    </optgroup>       
+            </select>
+            <!--10-->
+            <button>Send me</button>
+            <!--tiep di pa-->
+            <!--1-->
+            <a href="https://">Facebook tui nè</a>
+            <!--2-->
+            <img src="800.jpg">
+            <!--3+5-->
+            <p> Favorite Film</p>
+            <ol>
+                <li>Aquaman</li>
+                <li>barbie</li>
+            </ol>
+            <!--4+5-->
+            <p>Nguyên liệu:</p>
+            <ul>
+                <li>Gạo</li>
+                <li>Nước</li>
+            </ul>
+            <!--6-->
+            <s>hi cac ban</s>
+            <u>he lo pa da</u>
+            <!--7-->
+            <strike>nhe nho moi nguoi</strike>
+            <!--8-->
+            <p>h<sub>2</sub>o</p>
+            <!--9-->
+            <p>m<sup>2</sup></p>
+            <!--10-->
+            <strong>dieu quan trong noi n lan</strong><br>
+            <i>he nho cac ban</i>
+            <!--11-->
+            <frameset rows="10%,80%,10%">
+                <frame name="top" src="../html/top_frame.htm"/>
+                <frame name="main" src="../html/main_frame.htm"/>
+                <frame name="bottom" src="../html/bottom/bottom_frame.htm"/>
+                <noframes>
+                    <body>
+                        Trinh duyet cua ban khong ho tro frame
+                    </body>
+                </noframes>
+            </frameset>
+            <marquee>!!!He Lo Pa Da Bat Ngo Chua Pa Da!!!</marquee>
+            <form>
+                <fieldset>
+                    <legend>Pờ Rồ Phai Của Pà Đó!!!</legend>
+                    <label>Tên của pà: </label><input type="text" placeholder="nem">
+                    <br>
+                    <label>Pà là gay hay bonk: </label><input type="radio" name="gay">Gay<input type="radio" name="gay">Bonk<input type="radio" name="gay">None
+                    <br>
+                    <label>Pà có ghệ chưa: </label>
+                    <select>
+                        <option value="Có ">Có gòi pà dà</option>
+                        <option value="Không">Méo có</option>
+                        <option value="Giữa">Mới chia tay pà ơi</option>
+                    </select>
+                    <label>Cho xin bớt đây của pà đi</label><input type="text">
+                </fieldset>
+                <hr>
+            </form>
+            <h2 class="title-form"><marquee behavior="scrolling" scrollamount="5" direction="down" >CỔNG THÔNG TIN ĐIỆN TỬ </marquee></h2>
+            <form>
+                <fieldset>
+                    <legend aria-setsize="">Thông Tin Cá Nhân</legend>
+                    <label>Ảnh 3x4</label><input type="file"><br>
+                    <label>Họ và Tên: </label><input type="text">
+                    <label> Giới tính: </label><input type="radio" name="gioi">Nam<input type="radio" name="gioi">Nữ
+                    <br>
+                    <label>Ngày sinh: </label><input type="date"><br>
+                    <label>Địa chỉ: </label><input type="text"><br>
+                    <label>Quốc tịch: </label><select>
+                        <optgroup label="Nước ngoài">
+                            <option>Mỹ</option>
+                            <option>Anh</option>
+                            <option>Đức</option>
+                            <option>Canada</option>
+                            <option>Trung Quốc</option>
+                        </optgroup>
+                        <optgroup label="Việt Nam">
+                            <option>Hà Nội</option>
+                            <option>Tp Hồ Chí Minh</option>
+                            <option>Cần Thơ</option>
+                            <option>Đà Nẵng</option>
+                            <option>Đà Lạt</option>                            
+                        </optgroup>
+                        <optgroup label="Khác">
+                            <option>Khác</option>
+                        </optgroup>
+                    </select>
+                    <input type="text" placeholder="Nơi khác">
+                    <br>
+                    <label for="email">Email: </label><input type="text">
+                    <br>
+                    <input type="radio" name="id">CCCD
+                    <input type="radio" name="id">Passport
+                    <br>
+                    <label>Mặt trước:</label><input type="file" id="file-upload">
+                    <br>
+                    <label>Mặt sau:</label><input type="file" id="file-upload">
+                    <br><hr>
+                    <label>Thông tin tiêm chủng:</label><br>
+                    <select>
+                        <option>Chưa tiêm mũi 1</option>
+                        <option>Chưa tiêm mũi 2</option>
+                        <option>Chưa tiêm mũi 3</option>
+                        <option>Đã tiêm đủ 3 mũi</option>
+                    </select>
+                    <form>
+                        <legend>Mũi 1:</legend>
+                        <select>
+                            <option>Astra Zeneca</option>
+                            <option>VeroCell</option>
+                            <option>Prizer</option>
+                            <option>Moderna</option>
+                        </select>
+                        <label>Ngày tiêm: </label><input type="date">
+                    </form>
+                    <form>
+                        <legend>Mũi 2:</legend>
+                        <select>
+                            <option>Astra Zeneca</option>
+                            <option>VeroCell</option>
+                            <option>Prizer</option>
+                            <option>Moderna</option>
+                        </select>
+                        <label>Ngày tiêm: </label><input type="date">
+                    </form>
+                    <form>
+                        <legend>Mũi 3:</legend>
+                        <select>
+                            <option>Astra Zeneca</option>
+                            <option>VeroCell</option>
+                            <option>Prizer</option>
+                            <option>Moderna</option>
+                        </select>
+                        <label>Ngày tiêm: </label><input type="date">
+                    </form>
+                    <br>
+                    <i>Lệ phí: 25.000<sup>vnđ</sup></i>
+                    &nbsp<button margin="center">Gửi</button>
+                </fieldset>
+            </form>
+            <div id="divTable1">
+                <div id="divTable2">cot 1</div>
+                <div id="divTable2">cot 2</div>
+            </div>
+            <div id="divTable1">cot 3</div>
+
+            <style type="text/css">
+                div{ float:left}
+                #divTable1{
+                    width: 300px; height:25px;
+                    border: 2px solid red;}
+                #divTable2{
+                    width:100px;
+                    border: 2px solid blue;}
+                p {
+                    background-color: #CF9;
+                    text-indent: 20px;
+                    text-align: justify;
+                }
+                p#HTTT{color:#06C;}
+                p#MMT{color: #C00;}
+            </style>
+            <br>
+            <p>Cascading Style Sheets is a fairly old technology as far as the Web is concerned. The first
+                ideas about CSS were presented as early as 1994, and three major versions of the technology
+                have been developed since then. Table 5-1 summarizes the version history of CSS.
+            </p>
+            <p>he lo moi nguoi chao mung moi ngoi den voi channel cua minh. Neu thich video thi like share va subcribe
+                nhe.
+            </p>
+            <h2 style="font-size:48px; font-family: Arial, Helvetica, sans-serif; color: green;">CSS test</h2>
+            <p id="HTTT">HỆ THỐNG THÔNG TIN</p>
+             -TS Nguyễn Đình Thuân<br>
+             -ThS Nguyễn Thị Kim Phụng<br>
+            <p id="MMT">MẠNG MÁY TÍNH</p>
+             -TS Đàm Quang Hồng Hải<br>
+             -TS Nguyễn Anh Tuấn<br>
+
+             <style>
+                .button{
+                    color: blue;
+                    background-color: lightblue;
+                    
+                }
+                .button:hover{
+                    background-color: yellow;
+                    color: red;
+                }
+                .button:active{
+                    background-color: green;
+                }
+             </style>
+             <button class="button">Click me</button>
+    </body>
+</html>
